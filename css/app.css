@@ -37,5 +37,6 @@ bottom-white-bar {
     background-color: #fff;
 }
 .home{
-    background-color: darkgrey;
+    background-color: #151515;
+    height: 600px;
 }
