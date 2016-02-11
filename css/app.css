@@ -26,7 +26,8 @@ bottom-white-bar {
     position: relative;
     z-index: 8000;
     background-color: #fff;
-    margin-top: 637px;
+    margin-top: 232px;
+
 }
 .left-white-bar {
     top: 0;
@@ -47,4 +48,12 @@ bottom-white-bar {
 .home{
     background-color: #151515;
     height: 636px;
+   
+}
+.name{
+    padding-top: 270px;
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 64px;
 }
