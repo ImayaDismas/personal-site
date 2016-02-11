@@ -57,3 +57,18 @@ bottom-white-bar {
     font-weight: bolder;
     font-size: 64px;
 }
+.cd-primary-nav {
+  /* by default it's hidden - on top of the viewport */
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  transform: translateY(-100%);
+  transition-property: transform;
+  transition-duration: 0.4s;
+}
+ 
+.cd-primary-nav.is-visible {
+  transform: translateY(0);
+}
