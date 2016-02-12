@@ -63,8 +63,8 @@ bottom-white-bar {
   position: fixed;
   width: 110px;
   height: 98px;
-  right: 70px;
-  top: 0px;
+  right: 43px;
+  top: 40px;
   cursor: pointer;
   z-index: 200;
   -webkit-transform-origin: 110px 0px;
@@ -138,11 +138,12 @@ bottom-white-bar {
   transform: translateX(11px) rotate(-45deg);
 }
 nav {
-  width: 91%;
-  height: 100%;
+  width: 94.3%;
+  height: 95%;
   position: fixed;
   z-index: 100;
-  padding-right: 0.9375rem;
+  padding-left: 0;
+  margin-left: -13px;
 }
 
 nav.out {
