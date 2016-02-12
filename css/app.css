@@ -89,3 +89,51 @@ bottom-white-bar {
 .nav-trigger.close {
   background: transparent;
 }
+.line {
+  display: block;
+  position: absolute;
+  width: 80px;
+  height: 8px;
+  background: #fff;
+  left: 15px;
+  -webkit-transform-origin: 0px 4px;
+  -moz-transform-origin: 0px 4px;
+  -ms-transform-origin: 0px 4px;
+  -o-transform-origin: 0px 4px;
+  transform-origin: 0px 4px;
+  -webkit-transition: opacity 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s, -webkit-transform 0.24s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  -moz-transition: opacity 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s, -moz-transform 0.24s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  transition: opacity 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s, transform 0.24s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+}
+
+.line:nth-child(1) {
+  top: 16px;
+}
+
+.line:nth-child(2) {
+  top: 44px;
+}
+
+.line:nth-child(3) {
+  top: 72px;
+}
+
+.close .line:nth-child(1) {
+  -webkit-transform: translateX(11px) rotate(45deg);
+  -moz-transform: translateX(11px) rotate(45deg);
+  -ms-transform: translateX(11px) rotate(45deg);
+  -o-transform: translateX(11px) rotate(45deg);
+  transform: translateX(11px) rotate(45deg);
+}
+
+.close .line:nth-child(2) {
+  opacity: 0;
+}
+
+.close .line:nth-child(3) {
+  -webkit-transform: translateX(11px) rotate(-45deg);
+  -moz-transform: translateX(11px) rotate(-45deg);
+  -ms-transform: translateX(11px) rotate(-45deg);
+  -o-transform: translateX(11px) rotate(-45deg);
+  transform: translateX(11px) rotate(-45deg);
+}
