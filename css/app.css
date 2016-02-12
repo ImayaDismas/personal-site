@@ -300,3 +300,13 @@ nav.in li {
   padding-top: 30px;
   font-size: 64px;
 }
+h3 {
+  width: 100%;
+  color:aliceblue;
+  position: relative;
+  font-family: "Patua One", cursive;
+  text-align: center;
+  display: block;
+  padding-top: 30px;
+  font-size: 50px;
+}
