@@ -138,8 +138,8 @@ bottom-white-bar {
   transform: translateX(11px) rotate(-45deg);
 }
 nav {
-  width: 94.3%;
-  height: 95%;
+  width: 97.3%;
+  height: 93%;
   position: fixed;
   z-index: 100;
   padding-left: 0;
@@ -179,7 +179,7 @@ nav li {
 }
 
 nav li:hover {
-  background: #364e41;
+  background: #72A4D2;
 }
 
 nav.in li:nth-child(1) {
@@ -274,10 +274,19 @@ nav.in li {
 .header h1 {
   width: 100%;
   color: #fff;
-  position: absolute;
-  margin: 0;
+  position: relative;
   font-family: "Patua One", cursive;
   text-align: center;
   display: block;
-  top: 50%;
+  padding-top: 20%;
+}
+.header p {
+  width: 100%;
+  color: #72A4D2;
+  position: relative;
+  font-family: "Patua One", cursive;
+  text-align: center;
+  display: block;
+  padding-top: 30%;
+  font-size: 36px;
 }
