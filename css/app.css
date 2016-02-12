@@ -28,7 +28,7 @@ bottom-white-bar {
     position: relative;
     z-index: 8000;
     background-color: #fff;
-    margin-top: 636px;
+    margin-top: 517px;
 
 }
 .left-white-bar {
@@ -289,4 +289,14 @@ nav.in li {
   display: block;
   padding-top: 30%;
   font-size: 36px;
+}
+ h2 {
+  width: 100%;
+  color: #72A4D2;
+  position: relative;
+  font-family: "Patua One", cursive;
+  text-align: center;
+  display: block;
+  padding-top: 30px;
+  font-size: 64px;
 }
