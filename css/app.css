@@ -434,10 +434,29 @@ figure:hover+span {
   display: block;
   font-size: 30px;
   text-align: center;
-  margin-top: -99%;
+  margin-top: -94%;
   padding-left: 10px;
 }
-
+.cont p{
+  width: 92%;
+  color: #72A4D2;
+  position: relative;
+  font-weight: bold;
+  display: block;
+  font-size: 20px;
+  text-align: center;
+  margin-top: -198%;
+}
+.social p{
+  width: 92%;
+  color: #72A4D2;
+  position: relative;
+  font-weight: bold;
+  display: block;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 0%;
+}
 progress:not(value) {
 	/* Add your styles here. As part of this walkthrough we will focus only on determinate progress bars. */
 }
