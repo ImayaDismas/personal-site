@@ -139,7 +139,7 @@ bottom-white-bar {
 }
 nav {
   width: 97.3%;
-  height: 93%;
+  height: 100%;
   position: fixed;
   z-index: 100;
   padding-left: 0;
