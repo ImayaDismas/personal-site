@@ -464,6 +464,7 @@ figure:hover+span {
     display:block;
     height: 100px;
 }
+
 progress:not(value) {
 	/* Add your styles here. As part of this walkthrough we will focus only on determinate progress bars. */
 }
@@ -670,7 +671,6 @@ p[data-value]:after {
 														rgba(0,0,0,.2)),
      -moz-linear-gradient( left, #09c, #ff0);
 }
-
 .jquery::-moz-progress-bar,
 .node-js::-moz-progress-bar {
 	/* Gradient background with Stripes */

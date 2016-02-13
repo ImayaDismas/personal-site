@@ -34,7 +34,7 @@
                 <!--    Google Annalytics Ends here !!! -->
             </head>
             <body>
-                <div class="row">
+                <div class="row" id="home">
                     <div class="small-12 columns home">
                           <div id="nav-trigger" class="nav-trigger open">
                           <span class="line"></span>
@@ -43,15 +43,15 @@
                         </div>
                         <nav id="nav" class="out">
                           <ul>
-                            <li><a href="#" data-type="page-transition"><span class="nav-label">Home</span></a></li>
-                              <li><a href="#" data-type="page-transition"><span class="nav-label">Profile</span></a></li>
-                              <li><a href="#" data-type="page-transition"><span class="nav-label">Skills</span></a></li>
-                              <li><a href="#" data-type="page-transition"><span class="nav-label">Portfolio</span></a></li>
-                              <li><a href="#" data-type="page-transition"><span class="nav-label">Contact</span></a></li>
+                            <li><a href="#home" data-type="page-transition"><span class="nav-label">Home</span></a></li>
+                              <li><a href="#profile" data-type="page-transition"><span class="nav-label">Profile</span></a></li>
+                              <li><a href="#skills" data-type="page-transition"><span class="nav-label">Skills</span></a></li>
+                              <li><a href="#portfolio" data-type="page-transition"><span class="nav-label">Portfolio</span></a></li>
+                              <li><a href="#contact" data-type="page-transition"><span class="nav-label">Contact</span></a></li>
                           </ul>
                         </nav>
                         <section id="header" class="header">
-                          <a href="#" data-type="page-transition"><h1 id="heading">Dismas Imaya Nyagaka</h1>
+                          <a href="#home" data-type="page-transition"><h1 id="heading">Dismas Imaya Nyagaka</h1>
                               <p>Front-End Web Developer</p></a>
                         </section>
                         <div class="top-white-bar"></div>
@@ -59,7 +59,7 @@
                         <div class="right-white-bar"></div>
                     </div>
                 </div></br></br>
-                <div class="row">
+                <div class="row" id="profile">
                     <div class="small-12 columns profile home">
                         <div class="left-white-bar"></div>
                         <div class="right-white-bar"></div>
@@ -72,7 +72,7 @@
                         </div>
                     </div>
                 </div></br></br>
-                <div class="row">
+                <div class="row" id="skills">
                     <div class="small-12 columns skills home">
                         <div class="left-white-bar"></div>
                         <div class="right-white-bar"></div>
@@ -149,7 +149,7 @@
                         </div>
                     </div>
                 </div></br></br>
-                <div class="row">
+                <div class="row" id="portfolio">
                     <div class="small-12 columns hover portfolio home">
                         <div class="left-white-bar"></div>
                         <div class="right-white-bar"></div>
@@ -180,7 +180,7 @@
                         </div>
                     </div>
                 </div></br></br>
-                <div class="row">
+                <div class="row" id="contact">
                     <div class="small-12 columns contacts home">
                         <h2>Get In Touch</h2>
                         <div class="left-white-bar"></div>
@@ -297,7 +297,8 @@
                       }
                     }
 
-                    window.onload = resize; 
+                    window.onload = resize;
+                    
                     
                     $(function(){
 	
