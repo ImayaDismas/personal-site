@@ -310,6 +310,15 @@ h3 {
   padding-top: 30px;
   font-size: 50px;
 }
+.skills p {
+  width: 100%;
+  color: #72A4D2;
+  position: relative;
+  font-weight: bold;
+  text-align: left;
+  display: block;
+  font-size: 30px;
+}
 progress:not(value) {
 	/* Add your styles here. As part of this walkthrough we will focus only on determinate progress bars. */
 }
