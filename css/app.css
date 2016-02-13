@@ -414,6 +414,30 @@ figure:hover+span {
     height:500px;
     border-radius: 25px;
 }
+.button{
+    background-color: #8B3A3A;
+    margin-left: 80%;
+    border-radius: 25px;
+    width: 20%;
+    color: white;
+    font-weight: bolder;
+}
+.button:hover{
+    background-color: #72A4D2;
+}
+
+.contact p {
+  width: 92%;
+  color: #72A4D2;
+  position: relative;
+  font-weight: bold;
+  display: block;
+  font-size: 30px;
+  text-align: center;
+  margin-top: -99%;
+  padding-left: 10px;
+}
+
 progress:not(value) {
 	/* Add your styles here. As part of this walkthrough we will focus only on determinate progress bars. */
 }
