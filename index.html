@@ -14,6 +14,9 @@
             <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
                 <link rel="stylesheet" href="css/foundation.css" type="text/css" />
                 <link rel="stylesheet" href="css/app.css" type="text/css" />
+                <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+		        <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js">
+                </script>
                 <script src="js/main.js"></script>
                 <script src="js/modernizr.js"></script>
                 <!-- Modernizr -->
@@ -191,15 +194,14 @@
                                      <div class="columns form small-12">
                                       <input type="hidden" name="_subject" value="Personal Website"/>
                                       <div class="format">
-                                       <input style="background-color:transparent" type="text" name="Name" placeholder="Name..." id="id_number2" size="30" maxlength="10" />
+                                       <input style="background-color:transparent; color:white;" type="text" name="Name" placeholder="Name..." id="id_number2" size="30" maxlength="100" />
                                    </div>
                                    <div class="format">
-                                         <input style="background-color:transparent" type="email" name="Email" size="50" placeholder="Email..." id="id_number1"/>  
+                                         <input style="background-color:transparent; color:white;" type="email" name="Email" size="50" placeholder="Email..." id="id_number1"/>  
                                    </div>
                                 </div>
                                    <div class="columns form small-12">
-                                       <textarea  style="background-color:transparent" name="Message" id="id_number" rows="7" size="100" color="black"   placeholder="Your Message here..."> 
-                        </textarea>
+                                       <textarea  style="background-color:transparent; color:white;" type="text" id="id_number" rows="7" size="100"  placeholder="Your Message here...."></textarea>
                                       <input type="hidden" name="_next" value="//dismasimaya.bitballoon.com" />
                                       <input type="text" name="_gotcha" style="display:none" />
                                        <button class="button" type="submit">Submit</button> 
@@ -295,6 +297,32 @@
                     }
 
                     window.onload = resize; 
+                    
+                    $(function(){
+	
+                        var $window = $(window);		//Window object
+
+                        var scrollTime = 1.2;			//Scroll time
+                        var scrollDistance = 170;		//Distance. Use smaller value for shorter scroll and greater value for longer scroll
+
+                        $window.on("mousewheel DOMMouseScroll", function(event){
+
+                            event.preventDefault();	
+
+                            var delta = event.originalEvent.wheelDelta/120 || -event.originalEvent.detail/3;
+                            var scrollTop = $window.scrollTop();
+                            var finalScroll = scrollTop - parseInt(delta*scrollDistance);
+
+                            TweenMax.to($window, scrollTime, {
+                                scrollTo : { y: finalScroll, autoKill:true },
+                                    ease: Power1.easeOut,	//For more easing functions see http://api.greensock.com/js/com/greensock/easing/package-detail.html
+                                    autoKill: true,
+                                    overwrite: 5							
+                                });
+
+                        });
+
+                    });
      </script>
             </body>
         </html>
