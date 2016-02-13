@@ -328,6 +328,59 @@ h3 {
   font-size: 30px;
   text-align: center;
 }
+
+.portfolio {
+	margin: 15px 15px 0;
+	padding: 0;
+}
+.portfolio:last-child {
+	padding-bottom: 60px;
+}
+.portfolio::after {
+	content: '';
+	clear: both;
+	display: block;
+}
+.portfolio div {
+	position: relative;
+	float: left;
+	width: 300px;
+	height: 200px;
+	margin: 0 0 0 25px;
+	padding: 0;
+}
+.portfolio div:first-child {
+	margin-left: 0;
+}
+.portfolio div span {
+	position: absolute;
+	bottom: -20px;
+	left: 0;
+	z-index: -1;
+	display: block;
+	width: 300px;
+	margin: 0;
+	padding: 0;
+	color: #444;
+	font-size: 18px;
+	text-decoration: none;
+	text-align: center;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+	opacity: 0;
+}
+figure {
+	width: 300px;
+	height: 200px;
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	overflow: hidden;
+}
+figure:hover+span {
+	bottom: -36px;
+	opacity: 1;
+}
 .profile img {
     height:500px;
     border-radius: 25px;
